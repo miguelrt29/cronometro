@@ -1,0 +1,58 @@
+/* Estilos base */
+.container {
+    text-align: center;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    color: rgb(255, 0, 234);
+    display: flex;
+    align-items: center;
+    height: 800px;
+}
+h1, h2, h3 {
+    color: rgb(255, 0, 234);
+}
+.subtitulo, .entrega {
+    font-weight: bold;
+}
+/* Caja del cronómetro */
+.cronometro-box {
+    border: 2px solid rgb(255, 0, 234);
+    padding: 30px;
+    margin: 20px auto;
+    width: 300px;
+    border-radius: 10px;
+    background-color: black;
+
+}
+/* Contador */
+.contador {
+    border: 2px solid rgb(255, 0, 234);
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 20px 0;
+    font-size: 3em;
+    font-weight: bold;
+}
+/* Controles (botones) */
+.controles {
+    margin-top: 20px;
+}
+.btn {
+    padding: 10px 20px;
+    margin: 0 10px;
+    border-radius: 20px;
+    border: 2px solid rgb(255, 0, 234);
+    background: none;
+    color: rgb(255, 0, 234);
+    font-size: 1em;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: lowercase;
+}
+.btn:hover:not(:disabled) {
+    background-color: rgba(255, 0, 0, 0.1);
+}
+.btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}

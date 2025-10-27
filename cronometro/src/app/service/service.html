@@ -1,0 +1,25 @@
+<div class="container">
+    
+    <div class="cronometro-box">
+        <h3>Mi cronómetro observable</h3>
+        
+        <div class="contador">{{ (cronometroService.contador$ | async) }}</div>
+        
+        <div class="controles">
+            <button 
+                class="btn empezar" 
+                (click)="cronometroService.empezar()" 
+                [disabled]="estaCorriendo"
+            >
+                empezar
+            </button>
+            <button 
+                class="btn reiniciar" 
+                (click)="cronometroService.reiniciar()"
+            >
+                reiniciar
+            </button>
+        </div>
+    </div>
+    
+</div>
